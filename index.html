@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Barbe à Papa Volante — Artiste à Papa</title>
-  <meta name="description" content="Show de barbe à papa volante + stand pop corn. Réservez pour mariages, anniversaires, événements pros. Belgique & France." />
+  <meta name="description" content="Show de barbe à papa volante + stand pop corn. Réservez pour mariages, anniversaires et événements pros. Belgique." />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22><circle cx=%2232%22 cy=%2232%22 r=%2232%22 fill=%22white%22/><path d=%22M22 28c-5 0-9 4-9 9s4 9 9 9h20c5 0 9-4 9-9 0-4.6-3.2-8.5-7.6-9.4C41.5 24 38 21 34 21c-4.5 0-8.3 3-9.5 7.1C23 27.4 21.5 27 20 27z%22 fill=%22white%22/><path d=%22M31 36l-8 20%22 stroke=%22%23c1121f%22 stroke-width=%225%22 stroke-linecap=%22round%22/></svg>">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
@@ -13,9 +13,10 @@
     .btn-primary:hover { opacity:.9; }
     .brand { color: var(--brand); }
   </style>
-  <script src="https://cdn.lightwidget.com/widgets/lightwidget.js" async></script>
 </head>
 <body class="min-h-screen bg-gradient-to-br from-[color:var(--brand)]/5 via-white to-[color:var(--brand)]/10 text-slate-900">
+
+  <!-- NAV -->
   <header class="sticky top-0 z-50 backdrop-blur bg-white/80 border-b">
     <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
       <a href="#accueil" class="flex items-center gap-2 font-bold text-lg">
@@ -38,6 +39,7 @@
     </div>
   </header>
 
+  <!-- HERO -->
   <section id="accueil" class="relative">
     <div class="max-w-6xl mx-auto px-4 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
       <div class="space-y-6">
@@ -45,7 +47,7 @@
           Des nuages sucrés qui <span class="brand">volent la vedette</span>
         </h1>
         <p class="text-lg text-slate-700">
-          Animation spectaculaire de <strong>barbe à papa volante</strong> et stand <strong>pop corn</strong>. Belgique & France.
+          Animation spectaculaire de <strong>barbe à papa volante</strong> et stand <strong>pop corn</strong>. Belgique.
         </p>
         <div class="flex flex-wrap gap-3">
           <a href="#contact" class="px-5 py-3 rounded-lg btn-primary text-base">Demander une réservation</a>
@@ -60,6 +62,7 @@
     </div>
   </section>
 
+  <!-- BARBE A PAPA VOLANTE -->
   <section id="barbe-a-papa" class="py-16 md:py-24">
     <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
       <div class="space-y-4">
@@ -77,6 +80,7 @@
     </div>
   </section>
 
+  <!-- POP CORN -->
   <section id="pop-corn" class="py-16 md:py-24 bg-gradient-to-br from-[color:var(--brand)]/5 to-white">
     <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
       <div class="order-2 md:order-1 aspect-[4/3] rounded-2xl overflow-hidden shadow-xl ring-1 ring-black/5">
@@ -84,47 +88,69 @@
       </div>
       <div class="order-1 md:order-2 space-y-4">
         <h2 class="text-3xl md:text-4xl font-bold">Pop corn gourmand</h2>
-        <p class="text-slate-700">Sucré, salé, caramel… Parfait pour ciné-concerts, team buildings et kermesses.</p>
+        <p class="text-slate-700">Pop corn fraîchement éclaté, uniquement sucré.</p>
+        <ul class="grid gap-2 text-slate-700">
+          <li>👨‍👩‍👧‍👦 Débit jusqu’à 200 pers./h</li>
+          <li>🎪 Stand compact, autonome</li>
+        </ul>
       </div>
     </div>
   </section>
 
+  <!-- GALERIE -->
   <section id="galerie" class="py-16 md:py-24">
     <div class="max-w-6xl mx-auto px-4">
       <h2 class="text-3xl md:text-4xl font-bold mb-8">Galerie</h2>
-      <p class="text-slate-700 mb-6">Découvrez nos dernières prestations sur Instagram :</p>
-      <iframe
-        src="https://lightwidget.com/widgets/480dcf8f481e59abaa15d052cff1beb9.html"
-        scrolling="no"
-        allowtransparency="true"
-        class="lightwidget-widget w-full min-h-[520px] border-0"
-        title="Flux Instagram @artisteapapa"
-      ></iframe>
+      <p class="text-slate-700 mb-6">Découvrez nos dernières prestations :</p>
+
+      <!-- PLACE ICI ton iframe SnapWidget quand tu l’auras (il marche en HTTPS).
+      Exemple : <iframe src="https://snapwidget.com/embed/xxxx" ...></iframe> -->
+
+      <!-- Fallback simple en attendant : -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <img src="Artiste%20%C3%A0%20Papa%20au%20Ch%C3%A2teau%20d%E2%80%99Emines-39%20(1).jpg" class="rounded-xl shadow" alt="">
+        <img src="Artiste%20%C3%A0%20Papa%20au%20Ch%C3%A2teau%20d%E2%80%99Emines-33.jpg" class="rounded-xl shadow" alt="">
+        <img src="Artiste%20%C3%A0%20Papa%20au%20Ch%C3%A2teau%20d%E2%80%99Emines-15.jpg" class="rounded-xl shadow" alt="">
+      </div>
     </div>
   </section>
 
+  <!-- CONTACT -->
   <section id="contact" class="py-16 md:py-24 bg-gradient-to-br from-[color:var(--brand)]/5 to-white">
     <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8">
       <div class="space-y-4">
         <h2 class="text-3xl md:text-4xl font-bold">Contact & réservations</h2>
+        <p class="text-slate-700">Dites-nous tout sur votre événement et recevez un devis rapidement.</p>
         <div class="grid gap-3 text-slate-700">
           <p>📞 <a href="tel:+32488926870" class="underline">+32 488 92 68 70</a></p>
           <p>✉️ <a href="mailto:info@artisteapapa.be" class="underline">info@artisteapapa.be</a></p>
+          <p>📍 Belgique — déplacements possibles</p>
         </div>
       </div>
+
       <form action="https://formspree.io/f/mvgqvdjw" method="POST" class="grid gap-3 bg-white/80 backdrop-blur p-6 rounded-2xl shadow ring-1 ring-black/5">
         <div class="grid md:grid-cols-2 gap-3">
           <input name="nom" placeholder="Nom*" required class="px-3 py-2 rounded-lg ring-1 ring-slate-300" />
           <input name="email" type="email" placeholder="Email*" required class="px-3 py-2 rounded-lg ring-1 ring-slate-300" />
         </div>
-        <input name="tel" placeholder="Téléphone" class="px-3 py-2 rounded-lg ring-1 ring-slate-300" />
+        <div class="grid md:grid-cols-2 gap-3">
+          <input name="tel" placeholder="Téléphone" class="px-3 py-2 rounded-lg ring-1 ring-slate-300" />
+          <input name="date" type="date" placeholder="Date" class="px-3 py-2 rounded-lg ring-1 ring-slate-300" />
+        </div>
+        <div class="grid md:grid-cols-2 gap-3">
+          <input name="lieu" placeholder="Lieu / Ville" class="px-3 py-2 rounded-lg ring-1 ring-slate-300" />
+          <input name="type" placeholder="Type d’événement" class="px-3 py-2 rounded-lg ring-1 ring-slate-300" />
+        </div>
+        <input name="nb" type="number" min="1" placeholder="Nombre de personnes" class="px-3 py-2 rounded-lg ring-1 ring-slate-300" />
         <textarea name="message" placeholder="Votre message" rows="5" class="px-3 py-2 rounded-lg ring-1 ring-slate-300"></textarea>
         <button type="submit" class="w-full px-5 py-3 rounded-lg btn-primary">Envoyer la demande</button>
+        <p class="text-xs text-slate-500">En envoyant ce formulaire, vous acceptez d’être contacté par email/téléphone.</p>
         <input type="hidden" name="_subject" value="Demande de réservation — artisteapapa.be" />
       </form>
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer class="py-10 border-t">
     <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
       <p class="text-sm">© 2025 Barbe à Papa Volante — Blondeau Jérôme BE0716968768</p>
